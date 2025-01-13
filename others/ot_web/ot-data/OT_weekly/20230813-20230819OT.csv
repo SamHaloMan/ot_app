@@ -1,0 +1,4 @@
+,"PTB AST1 RD Overtime Log"
+Date,Project,RD,"Overtime Task","Expected Result","Planned OT(hrs)","Planned Tap out","Actual OT(hrs)","Actual Tap Out","Reason for addt'l hrs"
+20230814,F5685,"Laurence Hasan","Verify and gather 1 WIFI golden from HW RD","1 WIFI golden verified and ready for PE use",2.0,19:20,2.0,19:20,
+20230816,Others,"Jeffry Jaman","Assist SGC RD for OQC callbox setup for F5688ATT","Finish support and callbox can be used for F5688ATT",1.0,18:20,2.5,19:50,"more issue occur with callbox (can't retrieve log via web), but in the end SGC RD already retrieved all logs needed to open support ticket to amarisoft. Callbox still can't be used."

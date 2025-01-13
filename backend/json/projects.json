@@ -1,0 +1,362 @@
+[
+    {
+        "model": "api.project",
+        "pk": 1,
+        "fields": {
+            "name": "11AX",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 2,
+        "fields": {
+            "name": "ATTILA",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 3,
+        "fields": {
+            "name": "BARCA",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 4,
+        "fields": {
+            "name": "F3896",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 5,
+        "fields": {
+            "name": "Callix",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 6,
+        "fields": {
+            "name": "F5290v2",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 7,
+        "fields": {
+            "name": "F5295",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 8,
+        "fields": {
+            "name": "F5297",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 9,
+        "fields": {
+            "name": "F5380",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 10,
+        "fields": {
+            "name": "F5681",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 11,
+        "fields": {
+            "name": "F5685 MV3",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 12,
+        "fields": {
+            "name": "F5688",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 13,
+        "fields": {
+            "name": "F5688 EOLE v2",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 14,
+        "fields": {
+            "name": "F5688 TMO",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 15,
+        "fields": {
+            "name": "HH4K6E",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 16,
+        "fields": {
+            "name": "HH5K",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 17,
+        "fields": {
+            "name": "SUPERPOD",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 18,
+        "fields": {
+            "name": "CGA4131",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 19,
+        "fields": {
+            "name": "CGA4332",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 20,
+        "fields": {
+            "name": "DGA4135",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 21,
+        "fields": {
+            "name": "DGM4137",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 22,
+        "fields": {
+            "name": "DGM4980",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 23,
+        "fields": {
+            "name": "DNA0332",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 24,
+        "fields": {
+            "name": "DWA4135",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 25,
+        "fields": {
+            "name": "FGA2130",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 26,
+        "fields": {
+            "name": "MGA5331",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 27,
+        "fields": {
+            "name": "OWA813",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 28,
+        "fields": {
+            "name": "XB8",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 29,
+        "fields": {
+            "name": "PD160",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 30,
+        "fields": {
+            "name": "M6",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 31,
+        "fields": {
+            "name": "M7",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 32,
+        "fields": {
+            "name": "RAX30",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 33,
+        "fields": {
+            "name": "RAXE300",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 34,
+        "fields": {
+            "name": "M3",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 35,
+        "fields": {
+            "name": "F3897T",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "api.project",
+        "pk": 36,
+        "fields": {
+            "name": "Others",
+            "is_enabled": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    }
+]

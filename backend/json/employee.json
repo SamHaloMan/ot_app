@@ -1,0 +1,94 @@
+{
+	"employee":[
+		{
+			"EMPID":"1",
+			"name":"Apria Wati",
+			"id":"MW2300234",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"2",
+			"name":"Chris Easterjordan",
+			"id":"MW2300225",
+			"isEnabled": false
+		},
+		{
+			"EMPID":"3",
+			"name":"Dennis Harnandi",
+			"id":"MW2300285",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"4",
+			"name":"Jeffry Jaman",
+			"id":"MW2100721",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"5",
+			"name":"Jeremy Christoputra",
+			"id":"MW2202304",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"6",
+			"name":"Laurence Hasan",
+			"id":"MW2101784",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"7",
+			"name":"Martin Vermilli",
+			"id":"MW2201208",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"8",
+			"name":"Michael Julianpete",
+			"id":"MW2300226",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"9",
+			"name":"Otniel Dwimarti",
+			"id":"MW2202033",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"10",
+			"name":"Tommy Pratama",
+			"id":"MW2200166",
+			"isEnabled": false
+		},
+		{
+			"EMPID":"11",
+			"name":"Ivan Wijaya",
+			"id":"MW2301584",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"12",
+			"name":"Vincent Utama",
+			"id":"MW2301652",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"13",
+			"name":"Winnie1 Chuang",
+			"id":"MW2301723",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"14",
+			"name":"Jonathan Miharja",
+			"id":"MW2400027",
+			"isEnabled": true
+		},
+		{
+			"EMPID":"15",
+			"name":"Muchammad Farel",
+			"id":"MW2400310",
+			"isEnabled": true
+		}
+	]
+}

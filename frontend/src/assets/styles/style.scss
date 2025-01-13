@@ -1,0 +1,21 @@
+// Import styles
+// @use "@coreui/coreui/scss/coreui" as *;
+// @use "@coreui/chartjs/scss/coreui-chartjs" as *;
+@import "/node_modules/@coreui/coreui/scss/coreui.scss";
+@import "/node_modules/@coreui/chartjs/scss/coreui-chartjs.scss";
+
+// If you want to override variables do it here
+// @use "variables";
+@import "./variables";
+
+// Vendors
+// @use "vendors/simplebar";
+@import "./vendors/simplebar.scss";
+
+// Custom styles for this theme
+// @use "theme";
+@import "./theme";
+
+// If you want to add custom CSS you can put it here
+// @use "custom";
+@import "./custom";

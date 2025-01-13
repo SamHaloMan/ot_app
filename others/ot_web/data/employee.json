@@ -1,0 +1,94 @@
+{
+	"employee":[
+		{
+			"EMPID":"1",
+			"name":"Apria Wati",
+			"id":"MW2300234",
+			"enabled":1
+		},
+		{
+			"EMPID":"2",
+			"name":"Chris Easterjordan",
+			"id":"MW2300225",
+			"enabled":1
+		},
+		{
+			"EMPID":"3",
+			"name":"Dennis Harnandi",
+			"id":"MW2300285",
+			"enabled":1
+		},
+		{
+			"EMPID":"4",
+			"name":"Jeffry Jaman",
+			"id":"MW2100721",
+			"enabled":1
+		},
+		{
+			"EMPID":"5",
+			"name":"Jeremy Christoputra",
+			"id":"MW2202304",
+			"enabled":1
+		},
+		{
+			"EMPID":"6",
+			"name":"Laurence Hasan",
+			"id":"MW2101784",
+			"enabled":1
+		},
+		{
+			"EMPID":"7",
+			"name":"Martin Vermilli",
+			"id":"MW2201208",
+			"enabled":1
+		},
+		{
+			"EMPID":"8",
+			"name":"Michael Julianpete",
+			"id":"MW2300226",
+			"enabled":1
+		},
+		{
+			"EMPID":"9",
+			"name":"Otniel Dwimarti",
+			"id":"MW2202033",
+			"enabled":1
+		},
+		{
+			"EMPID":"10",
+			"name":"Tommy Pratama",
+			"id":"MW2200166",
+			"enabled":1
+		},
+		{
+			"EMPID":"11",
+			"name":"Ivan Wijaya",
+			"id":"MW2301584",
+			"enabled":1
+		},
+		{
+			"EMPID":"12",
+			"name":"Vincent Utama",
+			"id":"MW2301652",
+			"enabled":1
+		},
+		{
+			"EMPID":"13",
+			"name":"Winnie1 Chuang",
+			"id":"MW2301723",
+			"enabled":1
+		},
+		{
+			"EMPID":"14",
+			"name":"Jonathan Miharja",
+			"id":"MW2400027",
+			"enabled":1
+		},
+		{
+			"EMPID":"15",
+			"name":"Muchammad Farel",
+			"id":"MW2400310",
+			"enabled":1
+		}
+	]
+}

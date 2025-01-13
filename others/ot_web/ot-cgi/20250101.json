@@ -1,0 +1,17 @@
+[
+  {
+    "employee_id": "MW2202033",
+    "employee_name": "Otniel Dwimarti",
+    "project": "BARCA",
+    "time_start": "17:20",
+    "time_end": "18:20",
+    "total_hours": "1.00",
+    "has_break": false,
+    "break_start": null,
+    "break_end": null,
+    "break_hours": null,
+    "reason": "test",
+    "created_at": "2025-01-01 07:29:36",
+    "updated_at": "2025-01-01 07:36:29"
+  }
+]

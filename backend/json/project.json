@@ -1,0 +1,185 @@
+{
+	"project":[
+		{
+			"id":"1",
+			"name":"11AX",
+			"isEnabled": true
+		},
+		{
+			"id":"2",
+			"name":"ATTILA",
+			"isEnabled": true
+		},
+		{
+			"id":"3",
+			"name":"BARCA",
+			"isEnabled": true
+		},
+		{
+			"id":"4",
+			"name":"F3896",
+			"isEnabled": true
+		},
+		{
+			"id":"5",
+			"name":"Callix",
+			"isEnabled": true
+		},
+		{
+			"id":"6",
+			"name":"F5290v2",
+			"isEnabled": true
+		},
+		{
+			"id":"7",
+			"name":"F5295",
+			"isEnabled": true
+		},
+		{
+			"id":"8",
+			"name":"F5297",
+			"isEnabled": true
+		},
+		{
+			"id":"9",
+			"name":"F5380",
+			"isEnabled": true
+		},
+		{
+			"id":"10",
+			"name":"F5681",
+			"isEnabled": true
+		},
+		{
+			"id":"11",
+			"name":"F5685 MV3",
+			"isEnabled": true
+		},
+		{
+			"id":"12",
+			"name":"F5688",
+			"isEnabled": true
+		},
+		{
+			"id":"13",
+			"name":"F5688 EOLE v2",
+			"isEnabled": true
+		},
+		{
+			"id":"14",
+			"name":"F5688 TMO",
+			"isEnabled": true
+		},
+		{
+			"id":"15",
+			"name":"HH4K6E",
+			"isEnabled": true
+		},
+		{
+			"id":"16",
+			"name":"HH5K",
+			"isEnabled": true
+		},
+		{
+			"id":"17",
+			"name":"SUPERPOD",
+			"isEnabled": true
+		},
+		{
+			"id":"18",
+			"name":"CGA4131",
+			"isEnabled": true
+		},
+		{
+			"id":"19",
+			"name":"CGA4332",
+			"isEnabled": true
+		},
+		{
+			"id":"20",
+			"name":"DGA4135",
+			"isEnabled": true
+		},
+		{
+			"id":"21",
+			"name":"DGM4137",
+			"isEnabled": true
+		},
+		{
+			"id":"22",
+			"name":"DGM4980",
+			"isEnabled": true
+		},
+		{
+			"id":"23",
+			"name":"DNA0332",
+			"isEnabled": true
+		},
+		{
+			"id":"24",
+			"name":"DWA4135",
+			"isEnabled": true
+		},
+		{
+			"id":"25",
+			"name":"FGA2130",
+			"isEnabled": true
+		},
+		{
+			"id":"26",
+			"name":"MGA5331",
+			"isEnabled": true
+		},
+		{
+			"id":"27",
+			"name":"OWA813",
+			"isEnabled": true
+		},
+		{
+			"id":"28",
+			"name":"XB8",
+			"isEnabled": true
+		},
+		{
+			"id":"29",
+			"name":"PD160",
+			"isEnabled": true
+		},
+		{
+			"id":"30",
+			"name":"M6",
+			"isEnabled": true
+		},
+		{
+			"id":"31",
+			"name":"M7",
+			"isEnabled": true
+		},
+		{
+			"id":"32",
+			"name":"RAX30",
+			"isEnabled": true
+		},
+		{
+			"id":"33",
+			"name":"RAXE300",
+			"isEnabled": true
+		},
+		{
+			"id":"34",
+			"name":"M3",
+			"isEnabled": true
+		},		
+		{
+			"id":"35",
+			"name":"F3897T",
+			"isEnabled": true
+		},	
+		{
+			"id":"36",
+			"name":"Others",
+			"isEnabled": true
+		}
+		
+	]
+}

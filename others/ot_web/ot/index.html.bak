@@ -1,0 +1,623 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/newstyle.css">
+<link rel="stylesheet" href="style/jquery-ui.css">
+<link rel="stylesheet" href="style/style_jqueryui.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<title>Overtime Application</title>
+</head>
+
+<body>
+
+<div id="content-div">	
+	<form id="formOT" name="formOT">
+
+	<div id="tabs" style="display: block" align="center">
+		<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#ffffff">
+			<tr>
+				<td bgcolor="#ffffff">
+					<span class="word-blue-26-b">
+						<img src="images/asus-icons033.gif" width="15" height="15" align="absmiddle"> Overtime Application
+					</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="APPLY" name="APPLY" align="center">
+		<table width="98%" border="0" cellspacing="0" cellpadding="0" height="25" bgcolor="#5A89A7">
+			<tr>
+				<td align="left" valign="middle" id="APPLYtab" width="100%">
+					<img src="images/ppubicon.gif" width="16" height="16" border="0" align="absmiddle">
+					<span class="word-white-20-b" > Overtime Application Form </span>
+				</td>
+			</tr>
+		</table>
+		<table width="98%" border="0" cellpadding="5" cellspacing="1" bgcolor="#9FC3DA">
+			<tr bgcolor="#F7F7F7">
+				<td class="word-black-11-b" nowrap>
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> ID 
+				</td>
+				<td class="word-black-11" nowrap>
+					<div class="word-red-13-b" id="formId"></div>
+				</td>
+				<td class="word-black-11-b" nowrap>
+					<img src="./images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Applying Date 
+				</td>
+				<td class="word-black-11" nowrap>
+					<input type="text" class="word-black-11" size="12" id="formApplyDate" name="formApplyDate" maxlength="10" onchange="postUser()" value="">&nbsp;
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Applicant
+				</td>
+				<td id="applyDate" name="applyDate" class="word-black-11" >
+					<select id="formMember" name="formMember" onchange="postUser()" class="word-black-11" >
+					</select>
+				</td>
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Project<font color="red">*</font>
+				</td>
+				<td id="applyDate" name="applyDate" class="word-black-11" >
+					<select id="formProject" name="formProject" class="word-black-11" >
+				</td>
+			</tr>		
+			<tr id="SingleLeaveDate" name="SingleLeaveDate" bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> OT Start<font color="red">*</font>
+				</td>
+				<td class="word-black-11">
+					<select id="startOtHh" name="startOtHh" onchange="calLeaveHours(false);getCount();" class="word-black-11" >
+						<option value="00">00</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>					
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+					</select> : 
+					<select id="startOtMm" name="startOtMm" onchange="calLeaveHours(false);getCount();" class="word-black-11" >
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+						<option value="45">45</option>
+						<option value="50">50</option>
+						<option value="55">55</option>
+					</select>
+				</td>
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> OT End<font color="red">*</font>
+				</td>
+				<td class="word-black-11" nowrap>
+					<select id="endOtHh" name="endOtHh" onchange="calLeaveHours(true);getCount();" class="word-black-11" >
+						<option value="00">00</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>					
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+					</select> : 
+					<select id="endOtMm" name="endOtMm" onchange="calLeaveHours(true);getCount();" class="word-black-11" >
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+						<option value="45">45</option>
+						<option value="50">50</option>
+						<option value="55">55</option>
+					</select>  
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Planned OT Hours<font color="red">*</font>
+				</td>
+				<td class="word-black-11" colspan="3">
+					<input type="text" id="" name="totalHours" size="3" value="2.0" readonly="readonly" class="word-black-11">&nbsp;Hours&nbsp;
+					<!--( <font color="red">12</font> hrs MAX)-->
+					<span class="word-red-11-b" id="formOtCount"></span>
+				</td>
+			</tr>
+			<tr id="Summary" name="Summary" bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Summary:<br> (ex. F5295 Support)<font color="red">*</font>
+				</td>
+				<td class="word-black-11" colspan="3">
+					<input type="text" class="word-black-13" id="formSummary" name="formSummary" maxlength="20" size="25">
+				</td>
+			</tr>
+			<tr id="LeaveReason" name="LeaveReason" bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Overtime Task<font color="red">*</font>
+				</td>
+				<td class="word-black-11" colspan="3">
+					<TEXTAREA class="word-black-13" id="formTask" name="formTask" rows="4" cols="108"></TEXTAREA>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Expected Result<font color="red">*</font>
+				</td>
+				<td class="word-black-11" width="80%" colspan="3">
+					<TEXTAREA class="word-black-13" id="formResult" name="formResult" rows="4" cols="108"></TEXTAREA>
+				</td>
+			</tr>
+			<tr id="SingleLeaveDate" name="SingleLeaveDate" bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Actual OT End<font color="red">*</font>
+				</td>
+				<td class="word-black-11" nowrap colspan="3">
+					<select id="actOtHh" name="actOtHh" onchange="calLeaveHours(false);getCount();" class="word-black-11" >						
+						<option value="00">00</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+					</select> : 
+					<select id="actOtMm" name="actOtMm" onchange="calLeaveHours(false);getCount();" class="word-black-11" >
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+						<option value="45">45</option>
+						<option value="50">50</option>
+						<option value="55">55</option>
+					</select>  
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Actual OT Hours<font color="red">*</font>
+				</td>
+				<td class="word-black-11" colspan="3">
+					<input type="text" id="actHours" name="actHours" size="3" value="3.0" readonly="readonly" class="word-black-11">&nbsp;Hours&nbsp;
+					<!--( <font color="red">4</font> hrs MAX)-->
+				</td>
+			</tr>
+			<tr id="LeaveReason" name="LeaveReason" bgcolor="#F7F7F7">
+				<td class="word-black-11-b">
+					<img src="images/asus_download_arrow002.gif" width="7" height="15" align="absmiddle"> Reason for addt'l hours 
+				</td>
+				<td class="word-black-11" colspan="3">
+					<TEXTAREA class="word-black-13" id="formReason" name="formReason" rows="4" cols="108"></TEXTAREA>
+				</td>
+			</tr>
+		</table>
+	
+		<div align="center">
+			<table width="100%" border="0" cellspacing="1" cellpadding="5" bgcolor="#ffffff">
+				<tr>
+					<td width="20%">&nbsp;</td>
+					<td align="left" >
+						<div class="word-red-13-b" id="ntMsg"></div>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table width="98%" border="0" bgcolor="#0E2E5C" cellspacing="1" cellpadding="5">
+				<tr>
+					<td align="center">
+						<input type="button" id="submit" name="submit" value="Submit" class="es_button4_125" onclick="formSubmit()">
+						<input type="reset" id="reset" value="Reset" class="es_button4_125" onclick="formReset()">
+					</td>
+
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	</form>
+	<form method="post" action="/cgi-bin/otSubmit.sh" id="formOut">
+		<input type="hidden" name="data" value="">
+	</form>
+</div>
+
+<script>
+let fOt=document.getElementById("formOT");
+let nMsg=document.getElementById("ntMsg");
+let defaultData=null;
+function validData(outJson) {
+	if(outJson.ApplicantID=="n/a")
+		nMsg.innerHTML="Applicant is required.";
+	else if(outJson.OTTask=="")
+		nMsg.innerHTML="Overtime Task is required.";
+	else if(outJson.Summary=="")
+		nMsg.innerHTML="Summary is required.";
+	//else if((outJson.ActualOTHrs > 4)||(outJson.PlannedOTHrs > 4))
+	//	nMsg.innerHTML="Total OT Hours already exceeded 4 Hours!";
+	// else if(outJson.PlannedOTHrs==0 || outJson.ActualOTHrs==0)
+	// 	nMsg.innerHTML="Please check OT hours.";
+	else if(outJson.ExpectedResult=="")
+		nMsg.innerHTML="Expected Result is required.";
+	else
+		return true;
+
+	return false;
+}
+function formReset(){
+    setTimeout( init, 50);
+    return true;
+}
+function updateSelect(obj, item) {
+	for(var i=0; i<obj.options.length; i++) {
+		if( obj.options[i].text==item ) {
+			obj.selectedIndex=i;
+			return;
+		}
+	}
+}
+function updateDefault(){
+	if(defaultData) {
+		if(defaultData.id)
+			document.getElementById("formId").innerHTML=defaultData.id;
+
+		if(defaultData.ApplyDate) {
+			str=defaultData.ApplyDate;
+			year=str.substring(0,4);
+			month=str.substring(4,6);
+			day=str.substring(6,8);
+			fOt.formApplyDate.value=year+'/'+String(month).padStart(2,'0')+'/'+String(day).padStart(2,'0');
+		}
+
+		if(defaultData.ApplicantID) {
+			fOt.formMember.value=defaultData.ApplicantID;
+		}
+		else
+			fOt.formMember.value="n/a";
+
+		if(defaultData.Project)
+			updateSelect( fOt.formProject, defaultData.Project);
+
+		if(defaultData.OTStart) {
+			[hour, minute] = defaultData.OTStart.split(":");
+			updateSelect( fOt.startOtHh, hour);
+			updateSelect( fOt.startOtMm, minute);
+		}	
+
+		if(defaultData.OTEnd) {
+			[hour, minute] = defaultData.OTEnd.split(":");
+			updateSelect( fOt.endOtHh, hour);
+			updateSelect( fOt.endOtMm, minute);
+		}
+
+		if(defaultData.existed) {
+			fOt.startOtHh.disabled=true;
+			fOt.startOtMm.disabled=true;
+			fOt.endOtHh.disabled=true;
+			fOt.endOtMm.disabled=true;
+		}
+		
+		if(defaultData.Summary)
+			fOt.formSummary.value=defaultData.Summary.replace(/<<BR>>/g,"\n");
+		else
+			fOt.formSummary.value="";
+
+		if(defaultData.OTTask)
+			fOt.formTask.value=defaultData.OTTask.replace(/<<BR>>/g,"\n");
+		else
+			fOt.formTask.value="";
+
+		if(defaultData.ExpectedResult)
+			fOt.formResult.value=defaultData.ExpectedResult.replace(/<<BR>>/g,"\n");
+		else
+			fOt.formResult.value="";
+
+		if(defaultData.ActualOTEnd) {
+			[hour, minute] = defaultData.ActualOTEnd.split(":");
+			updateSelect( fOt.actOtHh, hour);
+			updateSelect( fOt.actOtMm, minute);
+		}
+
+		if(defaultData.ReasonAddtlHrs)
+			fOt.formReason.value=defaultData.ReasonAddtlHrs.replace(/<<BR>>/g,"\n");
+		else
+			fOt.formReason.value="";
+
+		calLeaveHours(false);
+	}
+}
+function calLeaveHours(udAct) {
+	if(udAct) {
+		fOt.actOtHh.value=fOt.endOtHh.value;
+		fOt.actOtMm.value=fOt.endOtMm.value;
+	}
+
+	if(fOt.endOtHh.value==0 && fOt.endOtMm.value==0)
+		tmpEndHh=24;
+	else
+		tmpEndHh=fOt.endOtHh.value;
+	
+	if( (tmpEndHh*60+fOt.endOtMm.value*1)<=(fOt.startOtHh.value*60+fOt.startOtMm.value*1) ) {
+		fOt.totalHours.value="0";
+		alert("Wrong OT End");
+		return;
+	}
+	else {
+		tmp=(tmpEndHh*60+fOt.endOtMm.value*1)-(fOt.startOtHh.value*60+fOt.startOtMm.value*1);
+		tmp=tmp/60.0;
+		fOt.totalHours.value=tmp.toFixed(1);
+	}
+
+	
+	if(fOt.actOtHh.value==0 && fOt.endOtMm.value==0)
+		tmpEndHh=24;
+	else
+		tmpEndHh=fOt.actOtHh.value;
+		
+	if( (tmpEndHh*60+fOt.actOtMm.value*1)<=(fOt.startOtHh.value*60+fOt.startOtMm.value*1) ) {
+		fOt.actHours.value="0";
+		alert("Wrong Actual OT End");
+		return;
+	}
+	else {
+		tmp=(tmpEndHh*60+fOt.actOtMm.value*1)-(fOt.startOtHh.value*60+fOt.startOtMm.value*1);
+		tmp=tmp/60.0;
+		fOt.actHours.value=tmp.toFixed(1);
+		if (tmp > 4) {
+			alert("Actual OT Hours already exceeded 4 Hours!");
+		}
+	}
+		
+}
+function formSubmit() {
+	var outJson={};
+	outJson.id=document.getElementById("formId").innerHTML;
+		[dateY,dateM,dateD]=fOt.formApplyDate.value.split("/");
+	outJson.ApplyDate=dateY+dateM+dateD;
+		opt=fOt.formMember;
+		tmp=opt.options[opt.selectedIndex];
+	outJson.Applicant=tmp.text;
+	outJson.ApplicantID=tmp.value;
+		opt=fOt.formProject;
+		tmp=opt.options[opt.selectedIndex];
+	outJson.Project=tmp.text;
+	outJson.ProjectID=tmp.value;
+	outJson.OTStart=fOt.startOtHh.value+":"+fOt.startOtMm.value;
+	outJson.OTEnd=fOt.endOtHh.value+":"+fOt.endOtMm.value;
+	outJson.PlannedOTHrs=fOt.totalHours.value;
+	outJson.Summary=fOt.formSummary.value.replace(/\n|\r\n/g,"<<BR>>");
+	outJson.OTTask=fOt.formTask.value.replace(/\n|\r\n/g,"<<BR>>");
+	outJson.ExpectedResult=fOt.formResult.value.replace(/\n|\r\n/g,"<<BR>>");
+	outJson.ActualOTEnd=fOt.actOtHh.value+":"+fOt.actOtMm.value;
+	outJson.ActualOTHrs=fOt.actHours.value;
+	outJson.ReasonAddtlHrs=fOt.formReason.value.replace(/\n|\r\n/g,"<<BR>>");
+	if(validData(outJson)) {
+  		// Set up the request
+		fetch('/cgi-bin/ot/otSubmit.pl', {
+			  method: 'POST',
+			  headers: {
+			    'Content-Type': 'application/json'
+			  },
+			  body: JSON.stringify(outJson)
+			})
+			.then(response => {
+				  if (!response.ok) { throw new Error('Network response was not ok'); }
+				  return response.json();
+				})
+			.then(jData => {
+				  // Handle the response data here
+				  //console.log(jData);
+				  init();
+				  defaultData=jData.data;
+				  nMsg.innerHTML=jData.result;
+				  updateDefault();
+				})
+			.catch(error => {
+				  // Handle errors here
+				  console.error('Error:', error);
+				});
+  	}  	
+}
+function postUser() {
+	var opt=fOt.formMember;
+	if(opt.selectedIndex!=0) {
+		var tmp=opt.options[opt.selectedIndex];
+		var outJson={};
+			[dateY,dateM,dateD]=fOt.formApplyDate.value.split("/");
+		outJson.ApplyDate=dateY+dateM+dateD;
+		outJson.Applicant=tmp.text;
+		outJson.ApplicantID=tmp.value;
+
+		// Set up the request
+		fetch('/cgi-bin/ot/getotday.pl', {
+		  method: 'POST',
+		  headers: {
+		    'Content-Type': 'application/json'
+		  },
+		  body: JSON.stringify(outJson)
+		})
+		.then(response => {
+			  if (!response.ok) { throw new Error('Network response was not ok'); }
+			  return response.json();
+			})
+		.then(jData => {
+			  // Handle the response data here
+			  //console.log(jData);
+			  init();
+			  defaultData=jData;
+			  updateDefault();
+			  getCount();
+			})
+		.catch(error => {
+			  // Handle errors here
+			  console.error('Error:', error);
+			});
+	}
+}
+function getCount() {
+	if(defaultData) {
+		var opt=fOt.formMember;
+		var tmp=opt.options[opt.selectedIndex];
+		var outJson={};
+		[dateY,dateM,dateD]=fOt.formApplyDate.value.split("/");
+		outJson.id=defaultData.id;
+		outJson.ApplyDate=dateY+dateM+dateD;
+		outJson.ApplicantID=tmp.value;
+		fetch('/cgi-bin/ot/getotcount.p', {
+			  method: 'POST',
+			  headers: {
+				'Content-Type': 'application/json'
+			  },
+			  body: JSON.stringify(outJson)
+			})
+			.then(response => response.json())
+			.then(jData => {
+				var count=jData.OTCount;
+				var cur=fOt.actHours.value;
+				// Process the JSON data and display it on the page
+				if (count*1.0+cur*1.0 > 12)
+				{
+					k=count*1.0+cur*1.0;
+					alert("Reminder:\n You have already exceeded 12 hrs.\n(Current= "+count+", Total="+k+" )");
+				}
+				//document.getElementById("formOtCount").innerHTML="REMIND : "+jData.OTCount+" hrs resgistered.";
+			})
+			.catch(error => console.error('Error fetching JSON data:', error));
+	}
+}
+fetch('/cgi-bin/ot/employee.pl')
+    .then(response => response.json())
+    .then(jData => {
+        // Process the JSON data and display it on the page
+        const jsonDataDiv = fOt.formMember;
+        tmp = '<option value="n/a"> </option>';
+        //console.log(jData);
+ 		for(var data of jData.employee )
+        {
+            //console.log(data);
+            if(data.enabled)
+            	tmp += `<option value='${data.id}'>${data.name}</option>`;                  
+        }
+        jsonDataDiv.innerHTML = tmp;
+    })
+    .catch(error => console.error('Error fetching JSON data:', error));
+
+fetch('/cgi-bin/ot/project.pl')
+    .then(response => response.json())
+    .then(jData => {
+        // Process the JSON data and display it on the page
+        const jsonDataDiv = fOt.formProject;
+        tmp = '';
+        //console.log(jData);
+        for(var data of jData.project )
+        {
+            //console.log(data);
+            if(data.enabled)
+            	tmp += `<option value='${data.id}'>${data.name}</option>`;                  
+        }
+        jsonDataDiv.innerHTML = tmp;
+    })
+    .catch(error => console.error('Error fetching JSON data:', error));
+
+function init() {
+	$( "#formApplyDate" ).datepicker({
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      showButtonPanel: true,
+      changeMonth: true,
+      changeYear: true,
+      dateFormat: 'yy/mm/dd'
+    });
+    const date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth() + 1;
+	var year = date.getFullYear();
+	fOt.formApplyDate.value=year+'/'+String(month).padStart(2,'0')+'/'+String(day).padStart(2,'0');
+	document.getElementById("formId").innerHTML="";
+	document.getElementById("formOtCount").innerHTML="";
+	fOt.formMember.selectedIndex=0;
+	fOt.formProject.selectedIndex=0;
+	fOt.startOtHh.selectedIndex=17;
+	fOt.startOtMm.selectedIndex=3;
+	fOt.startOtHh.disabled=false;
+	fOt.startOtMm.disabled=false;
+	fOt.endOtHh.selectedIndex=19;
+	fOt.endOtMm.selectedIndex=3;
+	fOt.endOtHh.disabled=false;
+	fOt.endOtMm.disabled=false;	
+	fOt.actOtHh.selectedIndex=19;
+	fOt.actOtMm.selectedIndex=3;
+	fOt.actOtHh.disabled=false;
+	fOt.actOtMm.disabled=false;	
+	nMsg.innerHTML="";
+
+	calLeaveHours(false);
+}
+
+$(function() {
+	init();
+}); 
+</script>
+
+</body>
+</html>
